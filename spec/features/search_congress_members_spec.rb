@@ -2,7 +2,14 @@ require 'rails_helper'
 
 RSpec.describe 'Govt Search' do
   describe 'happy path' do
-    it 'allows user to search for govt members' do
+    it 'allows user to search for govt members', :vcr do
+      # json_response = File.read('spec/fixtures/members_of_the_senate.json')
+      # stub_request(:get, "https://api.propublica.org/congress/v1/116/senate/members.json").
+      #          with(
+      #            headers: {
+      #        	     'X-Api-Key'=>'RyVUj8HR4zzcDItMW1VjJBnxXXJntt0f6lDmqKBN'
+      #            }).
+      #          to_return(status: 200, body: json_response, headers: {})
       visit root_path
 
       fill_in :search, with: 'Sanders'
@@ -14,14 +21,16 @@ RSpec.describe 'Govt Search' do
     end
 
     it 'allows user to search for another govt member' do
-      visit root_path
+      VCR.use_cassette('some_name', re_record_interval: 1.year) do
+        visit root_path
 
-      fill_in :search, with: 'Booker'
-      click_button 'Search'
+        fill_in :search, with: 'Booker'
+        click_button 'Search'
 
-      expect(page.status_code).to eq 200
-      expect(page).to have_content("Senator Cory Booker was found!")
-      expect(page).to have_content("SenBooker")
+        expect(page.status_code).to eq 200
+        expect(page).to have_content("Senator Cory Booker was found!")
+        expect(page).to have_content("SenBooker")
+      end
     end
   end
 end
