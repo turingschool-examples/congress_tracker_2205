@@ -3,6 +3,22 @@
   <%= form.text_field :search %>
   <%= form.submit 'Search' %>
 <% end %>
+<%= form_with url: search_state_path, local: true do |form| %>
+  <%= form.label :search_state, 'Search For House Members Of A Specific State' %>
+  <%= form.select :state, us_states %>
+  <%= form.submit 'Search By State' %>
+<% end %>
 <% if @member %>
   <h5>Senator <%= @member[:first_name].concat(" ").concat(@member[:last_name]) %> was found! Their twitter is: <%= @member[:twitter_account] %></h5>
+<% end %>
+<% if @members %>
+  <h1><%=@members.size%> Results </h1>
+  <% @members.each do |house_member| %>
+    <ul class="house_members">
+      <li class="name"><%= house_member[:name]%></li>
+      <li class="role"><%= house_member[:role]%></li>
+      <li class="party"><%= house_member[:party]%></li>
+      <li class="district"><%= house_member[:district]%></li>
+    </ul>
+  <% end %>
 <% end %>
