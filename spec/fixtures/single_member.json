@@ -1,0 +1,20 @@
+{
+  "id": "D000197",
+  "name": "Diana DeGette",
+  "first_name": "Diana",
+  "middle_name": null,
+  "last_name": "DeGette",
+  "suffix": null,
+  "role": "Representative",
+  "gender": "F",
+  "party": "D",
+  "times_topics_url": null,
+  "twitter_id": "RepDianaDeGette",
+  "facebook_account": "DianaDeGette",
+  "youtube_id": "RepDianaDeGette",
+  "seniority": "26",
+  "next_election": "2022",
+  "api_uri": "https://api.propublica.org/congress/v1/members/D000197.json",
+  "district": "1",
+  "at_large": false
+}
