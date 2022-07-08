@@ -8,4 +8,16 @@ class CongressFacade
     end
   end
 
+  def self.search_senate(search_term)
+    data = CongressService.search_senate
+    if data != nil
+      members = data[:results][0][:members]
+
+      found_members = members.find_all { |m| m[:last_name] == search_term }
+      Senator.new(found_members.first)
+    else
+      nil
+    end
+  end
+
 end
