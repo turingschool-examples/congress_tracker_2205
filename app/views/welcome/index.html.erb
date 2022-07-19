@@ -1,5 +1,10 @@
-<%= link_to "Register as a User", new_user_path %>
-<%= link_to "Login", login_path %>
+<% if current_user %>
+  <p>you are logged in!</p>
+  <%= link_to "Log out", '/logout', method: :delete %>
+<%  else %>
+  <%= link_to "Register as a User", new_user_path %>
+  <%= link_to "Login", login_path %>
+<% end %>
 
 <%= form_with url: search_path, local: true do |form| %>
   <%= form.label :search, 'Search For Senators By Last Name:' %>
