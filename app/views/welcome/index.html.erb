@@ -23,13 +23,17 @@
 <% end %>
 
 <% if @members %>
-  <h1><%= @members.size %> Results </h1>
-  <% @members.each do |house_member| %>
-    <ul class="house_members">
-      <li class="name"><%= house_member.name %></li>
-      <li class="role"><%= house_member.role %></li>
-      <li class="party"><%= house_member.party %></li>
-      <li class="district"><%= house_member.district %></li>
-    </ul>
-  <% end %>
+  <%# cache "house members - #{@state}" do %>
+    <%# binding.pry %>
+    <h1><%= @members.size %> Results </h1>
+    <% @members.each do |house_member| %>
+      <ul class="house_members">
+        <li class="name"><%= house_member.name %></li>
+        <li class="role"><%= house_member.role %></li>
+        <li class="party"><%= house_member.party %></li>
+        <li class="district"><%= house_member.district %></li>
+      </ul>
+    <% end %>
+  <%# end %>
+  <%# binding.pry %>
 <% end %>

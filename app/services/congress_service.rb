@@ -7,9 +7,11 @@ class CongressService
   end
 
   def self.search_senate
-    response = conn.get("/congress/v1/116/senate/members.json")
+    Rails.cache.fetch('senate-members', expires_in: 1.month) do
+      response = conn.get("/congress/v1/116/senate/members.json")
 
-    JSON.parse(response.body, symbolize_names: true)
+      JSON.parse(response.body, symbolize_names: true)
+    end
   end
 
   private
