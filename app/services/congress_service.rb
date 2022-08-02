@@ -9,11 +9,7 @@ class CongressService
   def self.search_senate
     response = conn.get("/congress/v1/116/senate/members.json")
 
-    if response.status == 200
-      JSON.parse(response.body, symbolize_names: true)
-    else
-      nil
-    end
+    JSON.parse(response.body, symbolize_names: true)
   end
 
   private

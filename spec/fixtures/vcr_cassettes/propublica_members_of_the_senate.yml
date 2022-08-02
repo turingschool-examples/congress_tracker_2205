@@ -27,27 +27,27 @@ http_interactions:
       Connection:
       - keep-alive
       Date:
-      - Mon, 18 Jul 2022 16:50:21 GMT
+      - Tue, 02 Aug 2022 13:54:50 GMT
       X-Amzn-Requestid:
-      - d5545ed9-9197-43bc-83fd-c9181762437d
+      - 82349694-5455-4952-8c1d-fca0028e99cd
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Headers:
       - Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
       X-Amz-Apigw-Id:
-      - VeNUMEawIAMFexw=
+      - WPPqoFkOoAMFbng=
       Access-Control-Allow-Methods:
       - GET,OPTIONS
       X-Amzn-Trace-Id:
-      - Root=1-62d58f4d-606b09bf67538951552def5b;Sampled=0
+      - Root=1-62e92caa-5057d05142a7dfdd286bd305;Sampled=0
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 1bfeca785e36f5deb3a11ad4668f4a70.cloudfront.net (CloudFront)
+      - 1.1 fa2254c03129ab031bcce738a88ad77e.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - ORD53-C3
+      - DEN50-C1
       X-Amz-Cf-Id:
-      - 8Y00u1kDtUAFzsyX1l3tjmYxN2h4RqAN4-CDcsF5pBhhjWP4l4x3PQ==
+      - YPVnwviv37lZNTwCwwA8wreBtIUIq_JCxx1nEd2G2V6nMA-5t_GKig==
     body:
       encoding: UTF-8
       string: "{\n   \"status\":\"OK\",\n   \"copyright\":\" Copyright (c) 2022 Pro
@@ -2685,5 +2685,5 @@ http_interactions:
         \"senior\",\n                 \"lis_id\": \"S391\"\n                 ,\"missed_votes_pct\":
         1.81,\n                 \"votes_with_party_pct\": 94.99,\n                 \"votes_against_party_pct\":
         5.01\n               }\n             ]\n      }\n   ]\n}\n"
-  recorded_at: Mon, 18 Jul 2022 16:50:21 GMT
+  recorded_at: Tue, 02 Aug 2022 13:54:50 GMT
 recorded_with: VCR 6.1.0

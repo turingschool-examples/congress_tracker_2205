@@ -8,16 +8,20 @@ class CongressFacade
     end
   end
 
-  def self.search_senate(search_term)
-    data = CongressService.search_senate
-    if data != nil
-      members = data[:results][0][:members]
+  def self.senate_members
+    response = conn.get("/congress/v1/116/senate/members.json")
 
-      found_members = members.find_all { |m| m[:last_name] == search_term }
-      Senator.new(found_members.first)
-    else
-      nil
-    end
+    data = JSON.parse(response.body, symbolize_names: true)
+    data[:results][0][:members]
+  end
+
+  def self.search_senate(query)
+    members = CongressService.search_senate[:results][0][:members]
+    found_members = members.find_all { |m| m[:last_name] == query }
+
+    return nil unless found_members.present?
+
+    Member.new(found_members.first)
   end
 
 end
