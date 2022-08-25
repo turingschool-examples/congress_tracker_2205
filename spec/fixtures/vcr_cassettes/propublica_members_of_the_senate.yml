@@ -10,7 +10,7 @@ http_interactions:
       X-Api-Key:
       - fake_api_key
       User-Agent:
-      - Faraday v1.8.0
+      - Faraday v2.5.2
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -23,31 +23,31 @@ http_interactions:
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
-      - '214979'
+      - '214958'
       Connection:
       - keep-alive
       Date:
-      - Wed, 06 Jul 2022 16:40:42 GMT
+      - Thu, 25 Aug 2022 16:42:56 GMT
       X-Amzn-Requestid:
-      - aa46136a-b4ce-4b8b-a28f-6453d3bc1775
+      - dafa08df-0360-48df-ae05-5fa8b52c8740
       Access-Control-Allow-Origin:
       - "*"
       Access-Control-Allow-Headers:
       - Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token
       X-Amz-Apigw-Id:
-      - U2opvGPuoAMFqWA=
+      - Xbb2hGJOIAMFWtg=
       Access-Control-Allow-Methods:
       - GET,OPTIONS
       X-Amzn-Trace-Id:
-      - Root=1-62c5bb0a-68a054924991874a36d0c393;Sampled=0
+      - Root=1-6307a68f-785f27bb39c865d33cdfb1c1;Sampled=0
       X-Cache:
       - Miss from cloudfront
       Via:
-      - 1.1 2b84b2991969206410cb61fa66838b94.cloudfront.net (CloudFront)
+      - 1.1 b508a0e8744edb82beb1add8f2f035d4.cloudfront.net (CloudFront)
       X-Amz-Cf-Pop:
-      - ORD52-C3
+      - ORD58-P2
       X-Amz-Cf-Id:
-      - yaD6dffNNX_w8pZrF5PE-jmShb5hsiPHIZTz5Q_WCs_V5PwhnVQAPg==
+      - Xwu8z8mVZJFQ0Y7Mpk9h-Ad_rpyLDP4wSI3D2gx0gKE7Ib6Jleh9Qw==
     body:
       encoding: UTF-8
       string: "{\n   \"status\":\"OK\",\n   \"copyright\":\" Copyright (c) 2022 Pro
@@ -841,7 +841,7 @@ http_interactions:
         \"412667\",\n                 \"cspan_id\": \"75342\",\n                 \"votesmart_id\":
         \"128583\",\n                 \"icpsr_id\": \"41502\",\n                 \"crp_id\":
         \"N00035483\",\n                 \"google_entity_id\": \"/m/0gg4wkg\",\n                 \"fec_candidate_id\":
-        \"S4IA00129\",\n                 \"url\": \"https://www.ernst.senate.gov/public\",\n
+        \"S4IA00129\",\n                 \"url\": \"https://www.ernst.senate.gov\",\n
         \                \"rss_url\": \"https://www.ernst.senate.gov/public/?a=rss.feed\",\n
         \                \"contact_form\": \"https://www.ernst.senate.gov/public/index.cfm/contact\",\n
         \                \"in_office\": false,\n                 \"cook_pvi\": null,\n
@@ -849,7 +849,7 @@ http_interactions:
         null,\n                 \"seniority\": \"5\",\n                 \"next_election\":
         \"2020\",\n                 \"total_votes\": 717,\n                 \"missed_votes\":
         12,\n                 \"total_present\": 0,\n                 \"last_updated\":
-        \"2020-12-30 19:01:18 -0500\",\n                 \"ocd_id\": \"ocd-division/country:us/state:ia\",\n
+        \"2022-07-13 02:50:47 -0400\",\n                 \"ocd_id\": \"ocd-division/country:us/state:ia\",\n
         \                \"office\": \"730 Hart Senate Office Building\",\n                 \"phone\":
         \"202-224-3254\",\n                 \"fax\": null,\n                 \"state\":
         \"IA\",\n                 \"senate_class\": \"2\",\n                 \"state_rank\":
@@ -1486,14 +1486,14 @@ http_interactions:
         \"9267977\",\n                 \"votesmart_id\": \"66395\",\n                 \"icpsr_id\":
         \"41110\",\n                 \"crp_id\": \"N00031696\",\n                 \"google_entity_id\":
         \"/m/09v5q9x\",\n                 \"fec_candidate_id\": \"S0UT00165\",\n                 \"url\":
-        \"https://www.lee.senate.gov/public\",\n                 \"rss_url\": \"https://www.lee.senate.gov/public/?a=rss.feed\",\n
+        \"https://www.lee.senate.gov\",\n                 \"rss_url\": \"https://www.lee.senate.gov/public/?a=rss.feed\",\n
         \                \"contact_form\": \"https://www.lee.senate.gov/public/index.cfm/contact\",\n
         \                \"in_office\": false,\n                 \"cook_pvi\": null,\n
         \                \"dw_nominate\": 0.917,\n                 \"ideal_point\":
         null,\n                 \"seniority\": \"9\",\n                 \"next_election\":
         \"2022\",\n                 \"total_votes\": 717,\n                 \"missed_votes\":
         12,\n                 \"total_present\": 0,\n                 \"last_updated\":
-        \"2020-12-30 19:01:18 -0500\",\n                 \"ocd_id\": \"ocd-division/country:us/state:ut\",\n
+        \"2022-07-13 02:50:29 -0400\",\n                 \"ocd_id\": \"ocd-division/country:us/state:ut\",\n
         \                \"office\": \"361a Russell Senate Office Building\",\n                 \"phone\":
         \"202-224-5444\",\n                 \"fax\": null,\n                 \"state\":
         \"UT\",\n                 \"senate_class\": \"3\",\n                 \"state_rank\":
@@ -1770,14 +1770,14 @@ http_interactions:
         \"25277\",\n                 \"votesmart_id\": \"53358\",\n                 \"icpsr_id\":
         \"49308\",\n                 \"crp_id\": \"N00007876\",\n                 \"google_entity_id\":
         \"/m/018qx5\",\n                 \"fec_candidate_id\": \"S2WA00189\",\n                 \"url\":
-        \"https://www.murray.senate.gov/public\",\n                 \"rss_url\": \"https://www.murray.senate.gov/category/press-releases/feed/\",\n
+        \"https://www.murray.senate.gov\",\n                 \"rss_url\": \"https://www.murray.senate.gov/category/press-releases/feed/\",\n
         \                \"contact_form\": \"http://www.murray.senate.gov/public/index.cfm/contactme\",\n
         \                \"in_office\": false,\n                 \"cook_pvi\": null,\n
         \                \"dw_nominate\": -0.352,\n                 \"ideal_point\":
         null,\n                 \"seniority\": \"27\",\n                 \"next_election\":
         \"2022\",\n                 \"total_votes\": 717,\n                 \"missed_votes\":
         39,\n                 \"total_present\": 1,\n                 \"last_updated\":
-        \"2020-12-30 19:01:18 -0500\",\n                 \"ocd_id\": \"ocd-division/country:us/state:wa\",\n
+        \"2022-07-13 02:50:31 -0400\",\n                 \"ocd_id\": \"ocd-division/country:us/state:wa\",\n
         \                \"office\": \"154 Russell Senate Office Building\",\n                 \"phone\":
         \"202-224-2621\",\n                 \"fax\": \"202-224-0238\",\n                 \"state\":
         \"WA\",\n                 \"senate_class\": \"3\",\n                 \"state_rank\":
@@ -2685,5 +2685,5 @@ http_interactions:
         \"senior\",\n                 \"lis_id\": \"S391\"\n                 ,\"missed_votes_pct\":
         1.81,\n                 \"votes_with_party_pct\": 94.99,\n                 \"votes_against_party_pct\":
         5.01\n               }\n             ]\n      }\n   ]\n}\n"
-  recorded_at: Wed, 06 Jul 2022 16:40:43 GMT
+  recorded_at: Thu, 25 Aug 2022 16:42:55 GMT
 recorded_with: VCR 6.1.0
