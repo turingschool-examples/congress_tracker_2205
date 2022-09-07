@@ -1,3 +1,5 @@
 class WelcomeController < ApplicationController
-  def index; end
+  def index
+    cookies.encrypted[:secret_message] = "cookies are delicious"
+  end
 end

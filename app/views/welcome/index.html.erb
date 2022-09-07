@@ -1,5 +1,9 @@
-<%= link_to "Register as a User", new_user_path %>
-<%= link_to "Login", login_path %>
+<% if current_user %>
+  <%= link_to "Logout", '/logout', method: :delete %>
+<% else %>
+  <%= link_to "Register as a User", new_user_path %>
+  <%= link_to "Login", login_path %>
+<% end %>
 
 <%= form_with url: search_path, local: true do |form| %>
   <%= form.label :search, 'Search For Senators By Last Name:' %>
@@ -12,11 +16,12 @@
   <%= form.submit 'Search By State' %>
 <% end %>
 <% if @member %>
-  <h5>Senator <%= @member.first_name.concat(" ").concat(@member.last_name) %> was found! Their twitter is: <%= @member.twitter_account %></h5>
+  <h5>Senator <%= @member.first_name.concat(" ").concat(@member.last_name) %> was found! Their twitter
+    is: <%= @member.twitter_account %></h5>
 <% end %>
 
 <% if @members %>
-  <h1><%=@members.size%> Results </h1>
+  <h1><%= @members.size %> Results </h1>
   <% @members.each do |house_member| %>
     <ul class="house_members">
       <li class="name"><%= house_member.name %></li>
